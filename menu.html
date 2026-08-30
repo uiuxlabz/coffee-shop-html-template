@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="KOPPEE menu — espresso drinks, pour-overs, specialty lattes, fresh pastries, and seasonal offerings.">
+  <title>Menu — KOPPEE</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#9749;</text></svg>">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-icon">&#9749;</span>
+        KOPPEE
+      </a>
+
+      <div class="nav__links">
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="about.html" class="nav__link">About</a>
+        <a href="menu.html" class="nav__link active">Menu</a>
+        <a href="contact.html" class="nav__link">Contact</a>
+      </div>
+
+      <a href="contact.html" class="btn btn--primary btn--sm nav__cta">Reserve a Table</a>
+
+      <button class="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+    </div>
+
+    <div class="nav__mobile-menu" id="mobile-menu" aria-hidden="true">
+      <a href="index.html" class="nav__link">Home</a>
+      <a href="about.html" class="nav__link">About</a>
+      <a href="menu.html" class="nav__link">Menu</a>
+      <a href="contact.html" class="nav__link">Contact</a>
+      <a href="contact.html" class="btn btn--primary">Reserve a Table</a>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="page-hero__content">
+      <h1>Our Menu</h1>
+      <p>From classic espresso to seasonal specialties, every drink and dish is made with care. All prices are subject to change with the seasons.</p>
+    </div>
+  </section>
+
+  <!-- Menu Content -->
+  <section class="section">
+    <div class="container">
+
+      <!-- Filter Buttons -->
+      <div class="menu-filter reveal">
+        <button class="menu-filter__btn active" data-filter="all">All</button>
+        <button class="menu-filter__btn" data-filter="drinks">Drinks</button>
+        <button class="menu-filter__btn" data-filter="food">Food</button>
+        <button class="menu-filter__btn" data-filter="seasonal">Seasonal</button>
+      </div>
+
+      <!-- Espresso Drinks -->
+      <div class="menu-category reveal" data-category="drinks">
+        <h3 class="menu-category__title">Espresso &amp; Coffee</h3>
+        <div class="menu-grid">
+
+          <div class="menu-item">
+            <img class="menu-item__img" src="assets/img/menu-espresso.jpg" alt="Classic espresso" loading="lazy">
+            <div class="menu-item__info">
+              <div class="menu-item__header">
+                <span class="menu-item__name">Espresso</span>
+                <span class="menu-item__price">$3.50</span>
+              </div>
+              <p class="menu-item__desc">Double shot of our house blend. Clean, balanced, with notes of dark chocolate and toasted almond.</p>
+              <div class="menu-item__tags">
+                <span class="menu-item__tag">Classic</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <img class="menu-item__img" src="assets/img/menu-latte.jpg" alt="Kopphee Latte" loading="lazy">
+            <div class="menu-item__info">
+              <div class="menu-item__header">
+                <span class="menu-item__name">Kopphee Latte</span>
+                <span class="menu-item__price">$5.50</span>
+              </div>
+              <p class="menu-item__desc">Our signature drink. Double-shot espresso with oat milk, vanilla, and a cinnamon dusting. The one everyone talks about.</p>
+              <div class="menu-item__tags">
+                <span class="menu-item__tag">Signature</span>
+                <span class="menu-item__tag">Oat Milk</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <img class="menu-item__img" src="assets/img/menu-cappuccino.jpg" alt="Classic cappuccino" loading="lazy">
+            <div class="menu-item__info">
+              <div class="menu-item__header">
+                <span class="menu-item__name">Cappuccino</span>
+                <span class="menu-item__price">$5.00</span>
+              </div>
+              <p class="menu-item__desc">Traditional Italian-style cappuccino with velvety microfoam. Equal parts espresso, steamed milk, and foam.</p>
+              <div class="menu-item__tags">
+                <span class="menu-item__tag">Classic</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <img class="menu-item__img" src="assets/img/menu-mocha.jpg" alt="Dark chocolate mocha" loading="lazy">
+            <div class="menu-item__info">
+              <div class="menu-item__header">
+                <span class="menu-item__name">Dark Mocha</span>
+                <span class="menu-item__price">$6.00</span>
+              </div>
+              <p class="menu-item__desc">Rich single-origin dark chocolate melted into a double-shot latte. Topped with whipped cream and cocoa powder.</p>
+              <div class="menu-item__tags">
+                <span class="menu-item__tag">Indulgent</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <img class="menu-item__img" src="assets/img/menu-pourover.jpg" alt="Pour-over coffee" loading="lazy">
+            <div class="menu-item__info">
+              <div class="menu-item__header">
+                <span class="menu-item__name">Pour-Over</span>
+                <span class="menu-item__price">$5.00</span>
+              </div>
+              <p class="menu-item__desc">Hand-poured, single-origin. Rotating selection — ask your barista what's on today. Served black to let the coffee speak.</p>
+              <div class="menu-item__tags">
+                <span class="menu-item__tag">Single-Origin</span>
+                <span class="menu-item__tag">Hand-Poured</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <img class="menu-item__img" src="assets/img/menu-cold-brew.jpg" alt="Cold brew" loading="lazy">
+            <div class="menu-item__info">
+              <div class="menu-item__header">
+                <span class="menu-item__name">Cold Brew</span>
+                <span class="menu-item__price">$5.00</span>
+              </div>
+              <p class="menu-item__desc">Steeped for 18 hours. Smooth, low-acid, and naturally sweet. Served over ice with your choice of milk.</p>
+              <div class="menu-item__tags">
+                <span class="menu-item__tag">Iced</span>
+                <span class="menu-item__tag">Low Acid</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Drinks: Specialty -->
+      <div class="menu-category reveal" data-category="drinks">
+        <h3 class="menu-category__title">Specialty Drinks</h3>
+        <div class="menu-grid">
+
+          <div class="menu-item">
+            <img class="menu-item__img" src="assets/img/menu-matcha.jpg" alt="Matcha latte" loading="lazy">
+            <div class="menu-item__info">
+              <div class="menu-item__header">
+                <span class="menu-item__name">Matcha Latte</span>
+                <span class="menu-item__price">$6.00</span>
+              </div>
+              <p class="menu-item__desc">Ceremonial-grade matcha whisked with your choice of milk. Earthy, creamy, and energizing.</p>
+              <div class="menu-item__tags">
+                <span class="menu-item__tag">Non-Coffee</span>
+                <span class="menu-item__tag">Matcha</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <img class="menu-item__img" src="assets/img/menu-chai.jpg" alt="Spiced chai" loading="lazy">
+            <div class="menu-item__info">
+              <div class="menu-item__header">
+                <span class="menu-item__name">House Chai</span>
+                <span class="menu-item__price">$5.50</span>
+              </div>
+              <p class="menu-item__desc">Our own spice blend — cardamom, cinnamon, ginger, clove — simmered with black tea and steamed milk. Served hot or iced.</p>
+              <div class="menu-item__tags">
+                <span class="menu-item__tag">House Blend</span>
+                <span class="menu-item__tag">Spiced</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <img class="menu-item__img" src="assets/img/menu-hot-choc.jpg" alt="Hot chocolate" loading="lazy">
+            <div class="menu-item__info">
+              <div class="menu-item__header">
+                <span class="menu-item__name">Sipping Chocolate</span>
+                <span class="menu-item__price">$6.00</span>
+              </div>
+              <p class="menu-item__desc">Melted Valrhona chocolate with whole milk and a pinch of sea salt. Thick, rich, and deeply satisfying.</p>
+              <div class="menu-item__tags">
+                <span class="menu-item__tag">Non-Coffee</span>
+                <span class="menu-item__tag">Rich</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Food -->
+      <div class="menu-category reveal" data-category="food">
+        <h3 class="menu-category__title">Baked Goods &amp; Light Bites</h3>
+        <div class="menu-grid">
+
+          <div class="menu-item">
+            <img class="menu-item__img" src="assets/img/menu-croissant.jpg" alt="Almond croissant" loading="lazy">
+            <div class="menu-item__info">
+              <div class="menu-item__header">
+                <span class="menu-item__name">Almond Croissant</span>
+                <span class="menu-item__price">$4.25</span>
+              </div>
+              <p class="menu-item__desc">Flaky, buttery layers filled with frangipane cream and topped with sliced almonds. Baked fresh every morning.</p>
+              <div class="menu-item__tags">
+                <span class="menu-item__tag">Baked Daily</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <img class="menu-item__img" src="assets/img/menu-muffin.jpg" alt="Blueberry muffin" loading="lazy">
+            <div class="menu-item__info">
+              <div class="menu-item__header">
+                <span class="menu-item__name">Blueberry Muffin</span>
+                <span class="menu-item__price">$3.75</span>
+              </div>
+              <p class="menu-item__desc">Made with Oregon blueberries, a hint of lemon zest, and a crunchy streusel top. Sturdy enough to dunk.</p>
+              <div class="menu-item__tags">
+                <span class="menu-item__tag">Baked Daily</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <img class="menu-item__img" src="assets/img/menu-avocado-toast.jpg" alt="Avocado toast" loading="lazy">
+            <div class="menu-item__info">
+              <div class="menu-item__header">
+                <span class="menu-item__name">Avocado Toast</span>
+                <span class="menu-item__price">$8.50</span>
+              </div>
+              <p class="menu-item__desc">Sourdough from Local Grain Co., smashed avocado, cherry tomatoes, everything bagel seasoning, and a poached egg.</p>
+              <div class="menu-item__tags">
+                <span class="menu-item__tag">Savory</span>
+                <span class="menu-item__tag">Vegetarian</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <img class="menu-item__img" src="assets/img/menu-banana-bread.jpg" alt="Banana bread" loading="lazy">
+            <div class="menu-item__info">
+              <div class="menu-item__header">
+                <span class="menu-item__name">Banana Bread</span>
+                <span class="menu-item__price">$3.50</span>
+              </div>
+              <p class="menu-item__desc">Dense, moist, and studded with walnuts. A KOPPEE staple since day one. Sliced thick and served with butter.</p>
+              <div class="menu-item__tags">
+                <span class="menu-item__tag">Baked Daily</span>
+                <span class="menu-item__tag">Classic</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <img class="menu-item__img" src="assets/img/menu-granola-bowl.jpg" alt="Granola bowl" loading="lazy">
+            <div class="menu-item__info">
+              <div class="menu-item__header">
+                <span class="menu-item__name">Granola Bowl</span>
+                <span class="menu-item__price">$9.00</span>
+              </div>
+              <p class="menu-item__desc">House-made granola with Greek yogurt, seasonal fruit, honey, and a sprinkle of chia seeds.</p>
+              <div class="menu-item__tags">
+                <span class="menu-item__tag">Healthy</span>
+                <span class="menu-item__tag">Vegetarian</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <img class="menu-item__img" src="assets/img/menu-cookie.jpg" alt="Chocolate chip cookie" loading="lazy">
+            <div class="menu-item__info">
+              <div class="menu-item__header">
+                <span class="menu-item__name">Chocolate Chip Cookie</span>
+                <span class="menu-item__price">$3.00</span>
+              </div>
+              <p class="menu-item__desc">Chewy center, crisp edges, and loaded with dark chocolate chunks. Baked in small batches throughout the day.</p>
+              <div class="menu-item__tags">
+                <span class="menu-item__tag">Baked Daily</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Seasonal -->
+      <div class="menu-category reveal" data-category="seasonal">
+        <h3 class="menu-category__title">Seasonal Specials</h3>
+        <div class="menu-grid">
+
+          <div class="menu-item">
+            <img class="menu-item__img" src="assets/img/menu-pumpkin.jpg" alt="Pumpkin spice latte" loading="lazy">
+            <div class="menu-item__info">
+              <div class="menu-item__header">
+                <span class="menu-item__name">Harvest Spice Latte</span>
+                <span class="menu-item__price">$6.50</span>
+              </div>
+              <p class="menu-item__desc">Real pumpkin puree, house-spiced syrup, espresso, and steamed milk. Autumn in a cup — available September through November.</p>
+              <div class="menu-item__tags">
+                <span class="menu-item__tag">Seasonal</span>
+                <span class="menu-item__tag">Fall</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <img class="menu-item__img" src="assets/img/menu-honey-lavender.jpg" alt="Honey lavender latte" loading="lazy">
+            <div class="menu-item__info">
+              <div class="menu-item__header">
+                <span class="menu-item__name">Honey Lavender Latte</span>
+                <span class="menu-item__price">$6.50</span>
+              </div>
+              <p class="menu-item__desc">Local wildflower honey and dried lavender infused into a steamed latte. Floral, sweet, and calming.</p>
+              <div class="menu-item__tags">
+                <span class="menu-item__tag">Seasonal</span>
+                <span class="menu-item__tag">Spring</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <img class="menu-item__img" src="assets/img/menu-iced-peach.jpg" alt="Iced peach tea" loading="lazy">
+            <div class="menu-item__info">
+              <div class="menu-item__header">
+                <span class="menu-item__name">Peach Iced Tea</span>
+                <span class="menu-item__price">$5.00</span>
+              </div>
+              <p class="menu-item__desc">Cold-brewed black tea with fresh peach puree and a squeeze of lemon. Refreshing and not too sweet.</p>
+              <div class="menu-item__tags">
+                <span class="menu-item__tag">Seasonal</span>
+                <span class="menu-item__tag">Summer</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="menu-item">
+            <img class="menu-item__img" src="assets/img/menu-gingerbread.jpg" alt="Gingerbread cookie" loading="lazy">
+            <div class="menu-item__info">
+              <div class="menu-item__header">
+                <span class="menu-item__name">Gingerbread Cookie</span>
+                <span class="menu-item__price">$3.50</span>
+              </div>
+              <p class="menu-item__desc">Soft and spicy with molasses, ginger, and cloves. Decorated by hand with royal icing. Available December only.</p>
+              <div class="menu-item__tags">
+                <span class="menu-item__tag">Seasonal</span>
+                <span class="menu-item__tag">Winter</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <h3>&#9749; KOPPEE</h3>
+          <p>Artisan coffee roasted in small batches, baked goods made fresh daily, and a warm corner of Portland that's always open for you.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="Instagram">&#9679;</a>
+            <a href="#" aria-label="Twitter">&#9679;</a>
+            <a href="#" aria-label="Facebook">&#9679;</a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h4>Quick Links</h4>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="menu.html">Menu</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer__col">
+          <h4>Hours</h4>
+          <a href="#">Mon-Fri: 6:30am - 8pm</a>
+          <a href="#">Saturday: 7am - 9pm</a>
+          <a href="#">Sunday: 8am - 6pm</a>
+        </div>
+
+        <div class="footer__col">
+          <h4>Find Us</h4>
+          <div class="footer__contact-item">
+            <span class="icon">&#128205;</span>
+            <span>742 Belmont Street<br>Portland, OR 97214</span>
+          </div>
+          <div class="footer__contact-item">
+            <span class="icon">&#128222;</span>
+            <span>(503) 555-BREW</span>
+          </div>
+          <div class="footer__contact-item">
+            <span class="icon">&#9993;</span>
+            <span>hello@kopphee.coffee</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>&copy; <span data-year></span> KOPPEE. All rights reserved.</span>
+        <span>Crafted with care in Portland, Oregon</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

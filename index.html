@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="KOPPEE — Artisan coffee shop brewed with passion, served with love. Specialty coffee, fresh pastries, and a warm atmosphere.">
+  <title>KOPPEE — Artisan Coffee Shop</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#9749;</text></svg>">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-icon">&#9749;</span>
+        KOPPEE
+      </a>
+
+      <div class="nav__links">
+        <a href="index.html" class="nav__link active">Home</a>
+        <a href="about.html" class="nav__link">About</a>
+        <a href="menu.html" class="nav__link">Menu</a>
+        <a href="contact.html" class="nav__link">Contact</a>
+      </div>
+
+      <a href="contact.html" class="btn btn--primary btn--sm nav__cta">Reserve a Table</a>
+
+      <button class="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+    </div>
+
+    <div class="nav__mobile-menu" id="mobile-menu" aria-hidden="true">
+      <a href="index.html" class="nav__link">Home</a>
+      <a href="about.html" class="nav__link">About</a>
+      <a href="menu.html" class="nav__link">Menu</a>
+      <a href="contact.html" class="nav__link">Contact</a>
+      <a href="contact.html" class="btn btn--primary">Reserve a Table</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero__bg">
+      <img src="assets/img/hero.jpg" alt="Cozy coffee shop interior with warm lighting" loading="eager">
+    </div>
+    <div class="hero__overlay"></div>
+
+    <div class="hero__content">
+      <span class="hero__tagline">Est. 2018 &mdash; Portland, Oregon</span>
+      <h1 class="hero__title">Brewed with Passion, Served with Love.</h1>
+      <p class="hero__subtitle">We craft every cup from single-origin beans, roasted in small batches to bring out their unique character. Welcome to your new favorite place.</p>
+      <div class="hero__actions">
+        <a href="menu.html" class="btn btn--primary btn--lg">Explore Our Menu</a>
+        <a href="about.html" class="btn btn--secondary btn--lg" style="color:#FEF3C7; border-color:#FEF3C7;">Our Story</a>
+      </div>
+    </div>
+
+    <div class="hero__scroll">
+      <span>Scroll</span>
+      &#8595;
+    </div>
+  </section>
+
+  <!-- Menu Highlights -->
+  <section class="section" id="highlights">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="overline">What We Serve</span>
+        <h2>Signature Favorites</h2>
+        <p>Every drink and dish is crafted with care using locally sourced ingredients and time-honored techniques.</p>
+      </div>
+
+      <div class="highlights">
+        <div class="highlight-card reveal reveal--delay-1">
+          <img class="highlight-card__img" src="assets/img/highlight-1.jpg" alt="Artisan latte with beautiful latte art" loading="lazy">
+          <div class="highlight-card__body">
+            <span class="highlight-card__label">Signature</span>
+            <h3 class="highlight-card__title">Kopphee Latte</h3>
+            <p class="highlight-card__text">Our house special — double-shot espresso with velvety oat milk, a hint of vanilla, and cinnamon dusted on top.</p>
+            <span class="highlight-card__price">$5.50</span>
+          </div>
+        </div>
+
+        <div class="highlight-card reveal reveal--delay-2">
+          <img class="highlight-card__img" src="assets/img/highlight-2.jpg" alt="Freshly baked croissants on a wooden board" loading="lazy">
+          <div class="highlight-card__body">
+            <span class="highlight-card__label">Bakery</span>
+            <h3 class="highlight-card__title">Almond Croissant</h3>
+            <p class="highlight-card__text">Flaky, buttery layers filled with frangipane cream and topped with sliced almonds and powdered sugar.</p>
+            <span class="highlight-card__price">$4.25</span>
+          </div>
+        </div>
+
+        <div class="highlight-card reveal reveal--delay-3">
+          <img class="highlight-card__img" src="assets/img/highlight-3.jpg" alt="Pour-over coffee being brewed" loading="lazy">
+          <div class="highlight-card__body">
+            <span class="highlight-card__label">Pour-Over</span>
+            <h3 class="highlight-card__title">Ethiopian Yirgacheffe</h3>
+            <p class="highlight-card__text">Bright and floral with notes of blueberry and jasmine. Single-origin beans, hand-poured to perfection.</p>
+            <span class="highlight-card__price">$5.00</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Preview -->
+  <section class="section section--cream" id="about">
+    <div class="container">
+      <div class="about-preview">
+        <img class="about-preview__img reveal" src="assets/img/about-preview.jpg" alt="Barista carefully preparing a pour-over coffee" loading="lazy">
+
+        <div class="about-preview__content reveal reveal--delay-2">
+          <span class="overline">Our Story</span>
+          <h2>A Place to Slow Down</h2>
+          <p>What started as a tiny cart on Belmont Street in 2018 has grown into something we never quite imagined. KOPPEE was born from a simple belief: that a great cup of coffee can change the rhythm of your entire day.</p>
+          <p>We partner directly with farmers in Ethiopia, Colombia, and Guatemala to source the finest single-origin beans. Every batch is roasted in-house, right here in Portland, to bring out the distinct flavors each region has to offer.</p>
+          <a href="about.html" class="btn btn--primary">Learn More About Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="section section--dark" id="testimonials">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="overline" style="color:#FDE68A;">What People Say</span>
+        <h2>From Our Community</h2>
+        <p style="color: #A8A29E;">The kind words from the people who make KOPPEE what it is every day.</p>
+      </div>
+
+      <div class="testimonials__grid">
+        <div class="testimonial-card reveal reveal--delay-1">
+          <div class="testimonial-card__quote">&ldquo;</div>
+          <p class="testimonial-card__text">KOPPEE is my go-to every morning. The Kopphee Latte is absolutely incredible, and the atmosphere is so welcoming. It feels like a second home.</p>
+          <div class="testimonial-card__author">
+            <img class="testimonial-card__avatar" src="assets/img/avatar-1.jpg" alt="Sarah M." loading="lazy">
+            <div>
+              <div class="testimonial-card__name">Sarah M.</div>
+              <div class="testimonial-card__role">Regular since 2019</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal reveal--delay-2">
+          <div class="testimonial-card__quote">&ldquo;</div>
+          <p class="testimonial-card__text">As a remote worker, I need a coffee shop that has great wifi, great coffee, and doesn't rush me out. KOPPEE checks every box. The pour-over is exceptional.</p>
+          <div class="testimonial-card__author">
+            <img class="testimonial-card__avatar" src="assets/img/avatar-2.jpg" alt="James T." loading="lazy">
+            <div>
+              <div class="testimonial-card__name">James T.</div>
+              <div class="testimonial-card__role">Freelance Designer</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal reveal--delay-3">
+          <div class="testimonial-card__quote">&ldquo;</div>
+          <p class="testimonial-card__text">I hosted my book club meeting here and it was perfect. The pastries were fresh, the coffee was outstanding, and the staff made everyone feel at home.</p>
+          <div class="testimonial-card__author">
+            <img class="testimonial-card__avatar" src="assets/img/avatar-3.jpg" alt="Emily R." loading="lazy">
+            <div>
+              <div class="testimonial-card__name">Emily R.</div>
+              <div class="testimonial-card__role">Book Club Host</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visit CTA -->
+  <section class="section" id="visit">
+    <div class="container">
+      <div class="visit-cta reveal">
+        <h2>Come Visit Us</h2>
+        <p>We'd love to see you. Whether it's your first time or your hundredth, there's always something new brewing at KOPPEE.</p>
+        <div style="display:flex; gap:1rem; justify-content:center; flex-wrap:wrap;">
+          <a href="menu.html" class="btn btn--white btn--lg">View Full Menu</a>
+          <a href="contact.html" class="btn btn--secondary btn--lg" style="color:#FEF3C7; border-color:#FEF3C7;">Get Directions</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <h3>&#9749; KOPPEE</h3>
+          <p>Artisan coffee roasted in small batches, baked goods made fresh daily, and a warm corner of Portland that's always open for you.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="Instagram">&#9679;</a>
+            <a href="#" aria-label="Twitter">&#9679;</a>
+            <a href="#" aria-label="Facebook">&#9679;</a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h4>Quick Links</h4>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="menu.html">Menu</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer__col">
+          <h4>Hours</h4>
+          <a href="#">Mon-Fri: 6:30am - 8pm</a>
+          <a href="#">Saturday: 7am - 9pm</a>
+          <a href="#">Sunday: 8am - 6pm</a>
+        </div>
+
+        <div class="footer__col">
+          <h4>Find Us</h4>
+          <div class="footer__contact-item">
+            <span class="icon">&#128205;</span>
+            <span>742 Belmont Street<br>Portland, OR 97214</span>
+          </div>
+          <div class="footer__contact-item">
+            <span class="icon">&#128222;</span>
+            <span>(503) 555-BREW</span>
+          </div>
+          <div class="footer__contact-item">
+            <span class="icon">&#9993;</span>
+            <span>hello@kopphee.coffee</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>&copy; <span data-year></span> KOPPEE. All rights reserved.</span>
+        <span>Crafted with care in Portland, Oregon</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

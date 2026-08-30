@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Get in touch with KOPPEE. Send us a message, find our location, or check our hours.">
+  <title>Contact — KOPPEE</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#9749;</text></svg>">
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo">
+        <span class="nav__logo-icon">&#9749;</span>
+        KOPPEE
+      </a>
+
+      <div class="nav__links">
+        <a href="index.html" class="nav__link">Home</a>
+        <a href="about.html" class="nav__link">About</a>
+        <a href="menu.html" class="nav__link">Menu</a>
+        <a href="contact.html" class="nav__link active">Contact</a>
+      </div>
+
+      <a href="contact.html" class="btn btn--primary btn--sm nav__cta">Reserve a Table</a>
+
+      <button class="burger" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobile-menu">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
+    </div>
+
+    <div class="nav__mobile-menu" id="mobile-menu" aria-hidden="true">
+      <a href="index.html" class="nav__link">Home</a>
+      <a href="about.html" class="nav__link">About</a>
+      <a href="menu.html" class="nav__link">Menu</a>
+      <a href="contact.html" class="nav__link">Contact</a>
+      <a href="contact.html" class="btn btn--primary">Reserve a Table</a>
+    </div>
+  </nav>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="page-hero__content">
+      <h1>Get in Touch</h1>
+      <p>Have a question, a reservation request, or just want to say hello? We'd love to hear from you.</p>
+    </div>
+  </section>
+
+  <!-- Contact Content -->
+  <section class="section">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Form -->
+        <div class="contact-form reveal">
+          <h3 style="margin-bottom: var(--sp-lg);">Send Us a Message</h3>
+          <form data-form="contact" novalidate>
+            <div class="form-group">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Jane Doe" required>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address</label>
+              <input type="email" id="email" name="email" placeholder="jane@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <select id="subject" name="subject" required>
+                <option value="" disabled selected>Choose a topic...</option>
+                <option value="general">General Inquiry</option>
+                <option value="reservation">Table Reservation</option>
+                <option value="catering">Catering &amp; Events</option>
+                <option value="wholesale">Wholesale Partnership</option>
+                <option value="feedback">Feedback</option>
+                <option value="other">Something Else</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Your Message</label>
+              <textarea id="message" name="message" placeholder="Tell us what's on your mind..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn--primary btn--lg" style="width:100%;">Send Message</button>
+
+            <div class="form-status" role="alert"></div>
+          </form>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="contact-info">
+          <div class="contact-info-card reveal reveal--delay-1">
+            <div class="contact-info-card__icon">&#128205;</div>
+            <h4>Location</h4>
+            <p>742 Belmont Street<br>Portland, OR 97214<br>Corner of Belmont &amp; 7th, look for the copper awning.</p>
+          </div>
+
+          <div class="contact-info-card reveal reveal--delay-2">
+            <div class="contact-info-card__icon">&#128336;</div>
+            <h4>Hours</h4>
+            <div class="hours-grid">
+              <div class="hours-row">
+                <span class="hours-row__day">Monday - Friday</span>
+                <span class="hours-row__time">6:30 am - 8:00 pm</span>
+              </div>
+              <div class="hours-row">
+                <span class="hours-row__day">Saturday</span>
+                <span class="hours-row__time">7:00 am - 9:00 pm</span>
+              </div>
+              <div class="hours-row">
+                <span class="hours-row__day">Sunday</span>
+                <span class="hours-row__time">8:00 am - 6:00 pm</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-info-card reveal reveal--delay-3">
+            <div class="contact-info-card__icon">&#128222;</div>
+            <h4>Reach Us Directly</h4>
+            <ul>
+              <li><strong>Phone:</strong> (503) 555-BREW</li>
+              <li><strong>Email:</strong> hello@kopphee.coffee</li>
+              <li><strong>Instagram:</strong> @kopphee.pdx</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Placeholder -->
+  <section class="section section--cream">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="overline">Find Us</span>
+        <h2>Our Corner of Portland</h2>
+      </div>
+      <div class="contact-map reveal">
+        <div style="text-align:center; padding: var(--sp-xl);">
+          <p style="font-size: 2rem; margin-bottom: var(--sp-sm);">&#128205;</p>
+          <p><strong>742 Belmont Street, Portland, OR 97214</strong></p>
+          <p style="margin-top: var(--sp-sm);">Corner of Belmont &amp; 7th Avenue — look for the copper awning.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <h3>&#9749; KOPPEE</h3>
+          <p>Artisan coffee roasted in small batches, baked goods made fresh daily, and a warm corner of Portland that's always open for you.</p>
+          <div class="footer__social">
+            <a href="#" aria-label="Instagram">&#9679;</a>
+            <a href="#" aria-label="Twitter">&#9679;</a>
+            <a href="#" aria-label="Facebook">&#9679;</a>
+          </div>
+        </div>
+
+        <div class="footer__col">
+          <h4>Quick Links</h4>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="menu.html">Menu</a>
+          <a href="contact.html">Contact</a>
+        </div>
+
+        <div class="footer__col">
+          <h4>Hours</h4>
+          <a href="#">Mon-Fri: 6:30am - 8pm</a>
+          <a href="#">Saturday: 7am - 9pm</a>
+          <a href="#">Sunday: 8am - 6pm</a>
+        </div>
+
+        <div class="footer__col">
+          <h4>Find Us</h4>
+          <div class="footer__contact-item">
+            <span class="icon">&#128205;</span>
+            <span>742 Belmont Street<br>Portland, OR 97214</span>
+          </div>
+          <div class="footer__contact-item">
+            <span class="icon">&#128222;</span>
+            <span>(503) 555-BREW</span>
+          </div>
+          <div class="footer__contact-item">
+            <span class="icon">&#9993;</span>
+            <span>hello@kopphee.coffee</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <span>&copy; <span data-year></span> KOPPEE. All rights reserved.</span>
+        <span>Crafted with care in Portland, Oregon</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
